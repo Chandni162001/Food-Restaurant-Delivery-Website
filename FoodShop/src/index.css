@@ -1,0 +1,22 @@
+#root{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+
+  .app{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer{
+    margin-top: auto;
+  }
+  
+
+
+  

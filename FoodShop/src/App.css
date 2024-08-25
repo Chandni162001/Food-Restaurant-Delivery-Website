@@ -1,0 +1,665 @@
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+/* navbar  */
+.navbar{
+    z-index: 99;
+    transition: all 2s ease;
+}
+
+.bg-color{
+  background-color: rgba(9, 9, 9, 0.437) !important;
+}
+
+.bg-change{
+  background-color: rgba(9, 9, 9, 0.536) !important;
+}
+
+.nav-link:focus{
+   background-color: lightyellow;
+   color: black !important;
+   padding: 7px;
+}
+
+.hover-underline {
+    position: relative;
+    max-width: max-content;
+  }
+  
+  .hover-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    border-block: 1px solid lightyellow;
+    transform: scaleX(0.2);
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .hover-underline:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+    
+  }
+
+  .hover-btn{
+    transition: all 0.4s ease-in-out !important;
+    border: 1px solid white !important;
+    display: inline-block !important;
+  }
+  
+  .hover-btn::is(:focus-visible){
+    background-color: lightyellow;
+    color: black !important;
+  }
+
+
+/* carousel */
+.carousel-item img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size:cover;
+    height: 100vh;
+    animation: smoothScale 4s linear forwards;
+}
+
+@keyframes smoothScale {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50px;
+
+}
+.short-heading{
+    border-bottom: 2px double white;
+    
+}
+
+/* createPage */
+.createPage{
+  background:linear-gradient(to right bottom, rgb(119, 214, 246),white);
+}
+
+.createPage .formHeading{
+  color: darkblue;
+}
+
+.createPage input{
+    background-color: transparent;
+    border: 1px solid;
+}
+.createPage input:focus{
+    background-color: transparent;
+}
+
+.createPage input::placeholder{
+  color: darkblue;
+}
+
+.buttonsDiv{
+    gap: 60px;
+}
+
+/* .buttonsDiv .gray{
+    background-color: rgb(199, 197, 197);
+    color: black;
+} */
+
+.link .link-hover{
+  text-decoration:none
+}
+
+.link .link-hover:hover {
+  text-decoration: underline;
+}
+
+.checkPointer{
+    cursor: pointer;
+}
+
+
+/* login */
+
+.loginPage{
+    background: url(./assets/login-bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginPage input{
+  border: 1px solid;
+  background: transparent;
+}
+.loginPage input:focus{
+  border: 3px solid rgb(63, 200, 246);
+  background: transparent;
+}
+
+.loginPage input::placeholder{
+  color: rgb(60, 60, 247);
+}
+.loginPage .formHeading{
+  color: darkblue;
+}
+
+ .detailsBox{
+  box-shadow: 0 0 10px rgba(0, 0, 139, 0.382);
+}
+
+.forgot{
+  text-decoration: none;
+}
+.forgot:hover{
+  text-decoration: underline;
+}
+.forgotDetail{
+  transition: 0.1s;
+}
+.forgotDetail:hover{
+  letter-spacing: 1px;
+}
+
+
+/* booktable */
+.booktablePage{
+    background: url(./assets/background-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+   
+}
+
+.booktable-form{
+    background-color: rgba(255, 255, 255, 0.244);
+    gap: 20px;
+    /* backdrop-filter: blur(5px); */
+    border: 3px solid white;
+}
+
+.booktable-form .tableImg{
+    height: 350px;
+    width: 450px;
+    
+    filter: drop-shadow(0 0 5px  white); 
+}
+
+@media (max-width: 768px) {
+    .booktable-form .tableImg {
+      display: none; 
+    }
+
+  }
+
+/* menu */
+
+.menuPage{
+    background: linear-gradient(to bottom, black,white);
+    
+    color: white;
+}
+
+.menuCards .card{
+    box-shadow: 0 0 15px black;
+}
+
+.cardHeader, .cardFooter {
+    background-color: lightyellow;
+    padding: 6px;
+    color: black !important;
+    display: inline-block;
+    box-shadow: 0 0 13px white;
+}
+
+.main-cardContent .cardFooter, .main-cardContent .cardHeader {
+    background-color: rgba(0, 0, 0, 0.741);
+    color: lightyellow !important;
+}
+
+
+.menuCards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.menuCards .menucard img {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 767px) {
+ 
+  .menuCards .menucard {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+  }
+
+  .menuCont {
+    margin-top: 5rem;
+  }
+
+  .menuHeading {
+    margin-bottom: 2rem;
+  }
+
+  .menuHeading hr {
+    width: 50%;
+  }
+}
+
+
+/* about */
+
+.aboutPage{
+    background: url("https://images.pexels.com/photos/268966/pexels-photo-268966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.aboutCont img{
+    box-shadow: 0 0 15px white;
+}
+
+.aboutPage .aboutCont {
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(3px);
+    min-height: 100vh;
+  
+}
+
+.about-content h1{
+    color: black;
+    text-shadow: 2px 2px white;
+    letter-spacing: 1px;
+}
+
+.about-content p{
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 767px) {
+ 
+  .about-content{
+    margin-top: 10px;
+  }
+
+}
+
+
+/* testimonial */
+
+.testimonial-page{
+    background: url(./assets/testimonial-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial-content h4{
+    letter-spacing:1px;
+    line-height: 40px;
+}
+
+
+.slide-in-out {
+    /* position: relative; */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+
+  
+  .testimonial-container {
+    overflow: hidden; 
+  }
+  
+  /* Define the sliding animation */
+  .slide-in-out.animate-left {
+    transform: translateX(-100%);
+  }
+  
+  .slide-in-out.animate-right {
+    transform: translateX(100%);
+  }
+  
+  
+
+  /* foodcards startersPage */
+  .custom-bg{
+    background: url(./assets/starters-bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* .itemcard .card:nth-child(odd) .left-content {
+  order: 2;
+}
+
+.itemcard .card:nth-child(odd) .right-content {
+  order: 1;
+}
+
+.itemcard .card:nth-child(even) .left-content {
+  order: 1;
+}
+
+.itemcard .card:nth-child(even) .right-content {
+  order: 2;
+} */
+
+  
+.itemcard .card{
+    box-shadow: 0px 0px 10px white;
+    transition: all .5s;
+  }
+  .itemcard .card-hover:hover{
+    transform: scale(0.9);
+  }
+  
+  .categoryHeading {
+   color:  white;
+   text-shadow: 6px 5px rgb(54, 1, 54);
+   border-bottom: double;
+  }
+
+
+  /* mainfood page */
+
+  .mainPage{
+    background: darkgray;
+  }
+
+  .mainHeading h1{
+    color:  darkblue;
+    text-shadow: 3px 5px white;
+    border-bottom: double;
+  }
+  
+    /* deserts/drinks page */
+
+   .desertsPage{
+    background: url("./assets/deserts-bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   }
+
+   .desertHeading h1{
+    color:  indigo;
+    text-shadow: 3px 5px white;
+    border-bottom: double;
+   }
+
+
+   /* admin page */
+   .adminHeading {
+    background: linear-gradient(150deg,orange 50%, white 0);
+    
+   }
+
+
+   /* contact page */
+
+   .contactPage, .contactt{
+    background: url(https://img.freepik.com/free-photo/mosaic-with-abstract-square-shapes_23-2150979730.jpg?t=st=1715978899~exp=1715982499~hmac=a78fbad9e6bf7baf58f76edc44cd5b72d1d299efe8a37a93da3689807bfdea1b&w=740);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+   }
+
+   .contactPage .banner{
+    margin-top: 72px;
+    background: rgba(255, 255, 255, 0.46);
+    min-height: 90vh;
+   }
+
+   .typewriter-heading {
+     font-size: 9vmin;
+     color: indigo;
+     text-align: left;
+     font-family: Lato, sans-serif;
+     font-weight: 700;
+     /* margin: 1rem 0 1rem 2rem; */
+    }
+    
+    .typewriter::before {
+      content: "";
+      animation: typing 20s infinite ease;
+    }
+
+ 
+  @keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "G"; }
+  2.2791%, 25.0698% { content: "Ge"; }
+  3.4186%, 23.9302% { content: "Get"; }
+  4.5581%, 22.7907% { content: "Get "; }
+  5.6977%, 21.6512% { content: "Get I"; }
+  6.8372%, 20.5116% { content: "Get In"; }
+  7.9767%, 19.3721% { content: "Get In "; }
+  9.1163%, 18.2326% { content: "Get In T"; }
+  10.2558%, 17.0930% { content: "Get In To"; }
+  11.1124%, 16.5620% { content: "Get In Tou"; }
+  12.2231%, 15.4423% { content: "Get In Touc"; }
+  13.3330%, 14.3327% { content: "Get In Touch"; }
+    
+  33.33%, 50% { content: ""; }
+  34.44%, 48.89% { content: "V"; }
+  35.56%, 47.78% { content: "Vi"; }
+  36.67%, 46.67% { content: "Vis"; }
+  37.78%, 45.56% { content: "Visi"; }
+  38.89%, 44.44% { content: "Visit"; }
+  40.76%, 43.33% { content: "Visit "; }
+  41.11%, 42.22% { content: "Visit U"; }
+  42.22%, 41.11% { content: "Visit Us"; }
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "C"; }
+  56.9767%, 72.9302% { content: "Ca"; }
+  58.1163%, 71.7907% { content: "Cal"; }
+  59.2558%, 70.6512% { content: "Call"; }
+  60.3953%, 69.5116% { content: "Call "; }
+  61.5349%, 68.3721% { content: "Call U"; }
+  62.4423%, 67.4423% { content: "Call Us"; }
+    
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "E"; }
+  80.9070%, 94.5814% { content: "Em"; }
+  82.0465%, 93.4419% { content: "Ema"; }
+  83.1860%, 92.3023% { content: "Emai"; }
+  84.3256%, 91.1628% { content: "Email"; }
+  85.3256%, 90.1628% { content: "Email "; }
+  86.3256%, 89.1628% { content: "Email U"; }
+  87.3256%, 88.1628% { content: "Email Us"; }
+  }
+  
+  .typewriter::after {
+    content: "";
+    animation: blink 0.5s linear infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid rgb(177, 81, 246);
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "Get In Touch"; }
+      25% { content: "Visit Us"; }
+    50% { content: "Call Us"; }
+    75% { content: "human"; }
+    }
+  
+    .typewriter::before {
+      content: "Get In Touch";
+      animation: sequencePopup 18s linear infinite;
+    }
+  }
+
+
+  .contactCont h5{
+      background: rgba(255, 255, 255, 0.499);
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 20px;
+      color: black;
+      box-shadow: 0 0 10px rgb(61, 3, 114);
+  }
+
+.contactDetails .box{
+  box-shadow: 0 0 10px white;
+  width: 100%;
+}
+
+.otherDetails{
+  background: rgba(255, 255, 255, 0.393);
+  height: 40vh;
+  width: 100%;
+}
+
+.contactPage1{
+  background: linear-gradient(150deg,blue 50%, lightblue 0);
+}
+
+
+.contact-form .modal-body input::placeholder , 
+.contact-form .modal-body select , 
+.contact-form .modal-body textarea::placeholder{
+  color: indigo;
+}
+
+/* gallery */
+
+.gallery-slider {
+  padding: 60px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.gallery-images {
+  display: inline-block;
+  animation: slide 30s infinite linear;
+}
+
+.gallery-images img {
+  height: 200px;
+  margin: 0 20px;
+ 
+}
+
+.circle:hover{
+  box-shadow: 0 0 8px orange;
+  border: 3px solid white;
+  /* transition: all 0.5s; */
+}
+
+.circle:focus{
+  transform: scale(1.1);
+}
+
+
+.image-banner img{
+  filter: brightness(3);
+}
+
+
+/* cart */
+.cart-header{
+  background: linear-gradient(to right, rgb(121, 241, 121),#D1E7DD);
+  color:#03522e !important;
+}
+
+
+/* logo */
+
+.logo h2:before{
+ content: attr(datatext);
+ position: absolute;
+ top: 0;
+ left: 0;
+ transform-origin: bottom;
+ transform: rotateX(180deg);
+ line-height: 0.9em;
+ background: linear-gradient(0deg, #ffffff61 0%, rgba(9, 9, 9, 0.437) 90%);
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+}
+
+
+.logo h2 {
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ position: relative;
+}
+
+
+.logo h2:hover{
+  cursor: pointer;
+}
+
+
+
+/* order */
+
+.disabled-row{
+ opacity: 0.6;
+ background-color: white;
+}
+
+
+/* order */
+.order-header{
+  background:white;
+  color: #37718E;
+}
+
+
+/* Your CSS file */
+.drop-hover:active {
+  background-color: rgb(66, 66, 66) !important;
+}
+
+
+
+

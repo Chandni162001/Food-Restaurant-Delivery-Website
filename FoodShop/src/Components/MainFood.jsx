@@ -1,0 +1,19 @@
+
+import React from 'react';
+import CategoryFilter from './CategoryFilter';
+
+function MainCourse() {
+    useEffect(()=>{
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      },[])
+    return (
+        <div>
+            <CategoryFilter />
+        </div>
+    );
+}
+
+export default MainCourse;
